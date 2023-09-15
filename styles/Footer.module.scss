@@ -1,0 +1,14 @@
+@import './variables';
+
+.siteFooter {
+    background-color: $black;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: auto;
+    width: 100%;
+
+    @media(max-width: 1025px) {
+        max-width: 895px;
+    }
+}

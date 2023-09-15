@@ -1,0 +1,64 @@
+@import './variables';
+
+.usersList {
+    max-width: 1190px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 160px;
+
+    @media(max-width: 1025px) {
+        max-width: 886px;
+    }
+
+    @media(max-width: 821px) {
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 724px;
+    }
+
+    @media(max-width: 429px) {
+        padding-top: 22px;
+        padding-bottom: 40px;
+    }
+}
+
+.title {
+    margin-bottom: 11px;
+
+    @media(max-width: 821px) {
+        margin-bottom: 31px;
+    }
+}
+
+.topSide {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    @media(max-width: 821px) {
+        display: none;
+    }
+
+    li {
+        border: 1px solid $purple;
+        padding: 7px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+
+    @media(max-width: 821px) {
+        gap: 38.5px;
+    }
+}
